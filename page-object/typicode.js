@@ -7,6 +7,14 @@ function getTypicode() {
     .set('Accept', 'application/json');
 }
 
+function postTypicode(payload) {
+    return api.post('/posts')
+    .set('Connection', 'keep-alive')
+    .set('Accept', 'application/json')
+    .send(JSON.stringify(payload));
+}
+
 module.exports = {
-    getTypicode
+    getTypicode,
+    postTypicode
 }
