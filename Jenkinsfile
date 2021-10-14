@@ -16,8 +16,16 @@ pipeline {
         }
     }
     post{
-        always{
-            echo "Finish"
-        }
+        publishHTML (
+            target : [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'report',
+                    reportFiles: 'api_automation_report.html',
+                    reportName: 'API Automation Report',
+                    reportTitles: 'API TEST REPORT'
+                ]
+        )
     }
 }
