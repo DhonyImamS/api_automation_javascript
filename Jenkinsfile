@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'jenkins-slave1'
+        label 'jenkins-slave2'
     }
     stages{
         stage('Install Dependencies'){
