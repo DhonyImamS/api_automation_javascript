@@ -1,4 +1,4 @@
-const {expect} = require('chai');
+const { expect } = require('chai');
 const chai = require('chai');
 chai.use(require('chai-json-schema'));
 const api = require('./../page-object/typicode');
