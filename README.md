@@ -1,1 +1,1 @@
-Ini adalah Project Belajar JavaScript Automation API
+Ini adalah Project Belajar JavaScript Automation API.
